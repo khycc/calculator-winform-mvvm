@@ -7,3 +7,4 @@
 /calculator/obj
 /packages
 *.editorconfig
+/calculator/.vs
