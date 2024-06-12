@@ -36,7 +36,7 @@
             this.buttonCommandMultiple = new calculator.Controls.ButtonEx();
             this.buttonCommandMinus = new calculator.Controls.ButtonEx();
             this.buttonCommandPlus = new calculator.Controls.ButtonEx();
-            this.buttonCommandCalc = new calculator.Controls.ButtonEx();
+            this.buttonCommandEqual = new calculator.Controls.ButtonEx();
             this.buttonInputNine = new calculator.Controls.ButtonEx();
             this.buttonInputEight = new calculator.Controls.ButtonEx();
             this.buttonInputSeven = new calculator.Controls.ButtonEx();
@@ -141,17 +141,17 @@
             this.buttonCommandPlus.表示文字列 = "+";
             this.buttonCommandPlus.Click += new System.EventHandler(this.buttonCommandPlus_Click);
             // 
-            // buttonCommandCalc
+            // buttonCommandEqual
             // 
-            this.buttonCommandCalc.Font = new System.Drawing.Font("MS UI Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.buttonCommandCalc.Location = new System.Drawing.Point(346, 422);
-            this.buttonCommandCalc.Name = "buttonCommandCalc";
-            this.buttonCommandCalc.Size = new System.Drawing.Size(107, 78);
-            this.buttonCommandCalc.TabIndex = 12;
-            this.buttonCommandCalc.Text = "=";
-            this.buttonCommandCalc.UseVisualStyleBackColor = true;
-            this.buttonCommandCalc.表示文字列 = "=";
-            this.buttonCommandCalc.Click += new System.EventHandler(this.buttonCommandCalc_Click);
+            this.buttonCommandEqual.Font = new System.Drawing.Font("MS UI Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.buttonCommandEqual.Location = new System.Drawing.Point(346, 422);
+            this.buttonCommandEqual.Name = "buttonCommandEqual";
+            this.buttonCommandEqual.Size = new System.Drawing.Size(107, 78);
+            this.buttonCommandEqual.TabIndex = 12;
+            this.buttonCommandEqual.Text = "=";
+            this.buttonCommandEqual.UseVisualStyleBackColor = true;
+            this.buttonCommandEqual.表示文字列 = "=";
+            this.buttonCommandEqual.Click += new System.EventHandler(this.buttonCommandEqual_Click);
             // 
             // buttonInputNine
             // 
@@ -285,7 +285,7 @@
             this.Controls.Add(this.buttonCommandMultiple);
             this.Controls.Add(this.buttonCommandMinus);
             this.Controls.Add(this.buttonCommandPlus);
-            this.Controls.Add(this.buttonCommandCalc);
+            this.Controls.Add(this.buttonCommandEqual);
             this.Controls.Add(this.buttonInputNine);
             this.Controls.Add(this.buttonInputEight);
             this.Controls.Add(this.buttonInputSeven);
@@ -317,7 +317,7 @@
         private Controls.ButtonEx buttonInputNine;
         private Controls.ButtonEx buttonInputEight;
         private Controls.ButtonEx buttonInputSeven;
-        private Controls.ButtonEx buttonCommandCalc;
+        private Controls.ButtonEx buttonCommandEqual;
         private Controls.ButtonEx buttonCommandMultiple;
         private Controls.ButtonEx buttonCommandMinus;
         private Controls.ButtonEx buttonCommandPlus;
