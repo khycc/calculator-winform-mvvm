@@ -21,6 +21,7 @@ namespace calculator.Models
         public CalcInput(CalcInputEnum enumValue)
         {
             (this as ICalcItem<decimal>).Value = decimal.Parse($"{((decimal)enumValue)}");
+            //this.va
         }
         public CalcInput(CalcInput mergeTarget, CalcInputEnum enumValue)
         {

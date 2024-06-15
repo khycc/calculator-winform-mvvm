@@ -22,6 +22,8 @@ using System.Runtime.InteropServices;
 // このプロジェクトが COM に公開される場合、次の GUID が typelib の ID になります
 [assembly: Guid("715d42ca-f7e5-4c93-8a12-98fea0aafc34")]
 
+[assembly: log4net.Config.XmlConfigurator(Watch = true)]
+
 // アセンブリのバージョン情報は、以下の 4 つの値で構成されています:
 //
 //      メジャー バージョン

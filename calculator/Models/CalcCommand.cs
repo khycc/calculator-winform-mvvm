@@ -1,9 +1,4 @@
 ﻿using calculator.Constants;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace calculator.Models
 {
@@ -14,6 +9,11 @@ namespace calculator.Models
         public CalcCommandEnum GetValue()
         {
             return (this as ICalcItem<CalcCommandEnum>).Value;
+        }
+
+        public CalcCommand(CalcCommandEnum value)
+        {
+            this.Value = value;
         }
     }
 }

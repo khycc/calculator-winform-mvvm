@@ -1,9 +1,6 @@
 ﻿using calculator.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace calculator.ViewModels
@@ -14,11 +11,11 @@ namespace calculator.ViewModels
         {
             // Initialize the model
             Model = new Models.Calculator();
-            this.Stack = new Stack<ICalcItem>();
+            this.Stack = new CalculatorStack();
         }
 
         public Models.Calculator Model { get; set; }
-        public Stack<ICalcItem> Stack { get; set; }
+        public CalculatorStack Stack { get; set; }
 
         public void Dispose()
         {

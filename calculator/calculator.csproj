@@ -79,6 +79,7 @@
     <Compile Include="Controls\ButtonEx.Designer.cs">
       <DependentUpon>ButtonEx.cs</DependentUpon>
     </Compile>
+    <Compile Include="Extensions\LoggerWrapper.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +90,7 @@
     <Compile Include="Models\CalcInput.cs" />
     <Compile Include="Models\Calculator.cs" />
     <Compile Include="Constants\CalcCommandEnum.cs" />
+    <Compile Include="Models\CalculatorStack.cs" />
     <Compile Include="Models\ICalcItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
